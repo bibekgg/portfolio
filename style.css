@@ -1,0 +1,153 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font-family: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+@media only screen and (max-width: 75em) {
+  html {
+    font-size: 59%;
+  }
+}
+
+@media only screen and (max-width: 56.25em) {
+  html {
+    font-size: 56%;
+  }
+}
+
+@media only screen and (min-width: 112.5em) {
+  html {
+    font-size: 65%;
+  }
+}
+
+body {
+  box-sizing: border-box;
+  position: relative;
+  line-height: 1.5;
+  font-family: sans-serif;
+  overflow-x: hidden;
+  overflow-y: auto;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.home {
+  color: #fff;
+  background: linear-gradient(
+      to right,
+      rgba(245, 245, 245, 0.8),
+      rgba(245, 245, 245, 0.8)
+    ),
+    url(./assets/common-bg.svg);
+  background-position: center;
+  height: 100vh;
+  position: relative;
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 90rem;
+  width: 92%;
+  text-align: center;
+}
+
+.profile-img {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.heading {
+  font-size: 6rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #111;
+  font-weight: 800;
+}
+
+.info {
+  margin: 3rem auto 0 auto;
+  max-width: 80rem;
+}
+
+.text {
+  color: #333;
+  font-size: 2.2rem;
+  width: 100%;
+  line-height: 1.6;
+}
+
+.s-text {
+    color: #333;
+    font-size: 1.5rem;
+    width: 100%;
+    line-height: 1.6;
+  }
+
+.cta {
+  margin-top: 5rem;
+}
+
+.btn {
+  background: #7843e9;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: inline-block;
+  font-weight: 700;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s;
+  padding: 1.5rem 8rem;
+  font-size: 2rem;
+}
+
+.socials {
+  margin-top: 5rem;
+  background: #fff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
+  padding: 0.5rem;
+  display: inline-block;
+}
+
+.social {
+  width: 5rem;
+  display: inline-block;
+}
+
+.social-icon-link {
+  width: 100%;
+  display: block;
+  padding: 1rem;
+  transition: background 0.3s;
+  border-radius: 5px;
+}
+
+.social-icon-link:hover {
+  background: rgba(120, 67, 233, 0.2);
+}
+
+.fa {
+  font-size: 30px;
+  width: 100%;
+  color: black;
+}
